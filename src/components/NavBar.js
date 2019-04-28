@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-
 class NavBar extends Component {
     render() {
         return (
@@ -25,4 +24,4 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar
+export default NavBar;

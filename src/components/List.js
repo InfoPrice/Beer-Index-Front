@@ -4,13 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Typography from '@material-ui/core/Typography';
 import { CardContent } from '@material-ui/core';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
-import Icon from '@material-ui/core/Icon';
-import NavigationIcon from '@material-ui/icons/Navigation';
 import * as produtoService from '../utils/produtoService';
-
-
 
 class List extends Component {
 
@@ -35,7 +29,7 @@ class List extends Component {
             });
         });
 
-        if(this.props == "proximo"){
+        if(this.props === "proximo"){
             this.getProximos();
         }
     }
@@ -52,7 +46,7 @@ class List extends Component {
                             <Grid item xs={4}>
                                 <CardActionArea >
                                     <div>
-                                        <img className="arruma-imagem" src={cerveja.foto}/>
+                                        <img className="arruma-imagem" src={cerveja.foto} alt="cerveja"/>
                                     </div>                              
                                 </CardActionArea>
                             </Grid>

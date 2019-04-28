@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
 import Categoria from './Categoria';
 import NavBar from './NavBar';
 import List from './List';

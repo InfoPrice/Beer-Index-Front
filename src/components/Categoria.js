@@ -4,7 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
-import * as produtoService from '../utils/produtoService';
 
 class Categoria extends Component {    
 
