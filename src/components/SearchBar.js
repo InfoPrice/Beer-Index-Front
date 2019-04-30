@@ -9,7 +9,7 @@ class SearchBar extends Component {
         return (
             <Paper item xs={12} elevation={1}>               
                 <IconButton item xs={2} aria-label="Search">
-                    <SearchIcon />
+                    <SearchIcon/>
                 </IconButton>
                 <InputBase className="search-field" item xs={10} placeholder="Buscar" />
             </Paper>

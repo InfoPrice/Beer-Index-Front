@@ -5,29 +5,44 @@ import NavBar from './NavBar';
 import List from './List';
 import SearchBar from './SearchBar';
 import { Route } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
+import { createBrowserHistory } from "history";
 
 class App extends Component {
   
   render() {
+    const customHistory = createBrowserHistory();
     return (
-      <div>
-        <NavBar />
+      <Grid>
         <Route exact path="/" render={() => (
-          <SearchBar />
-        )} />
-        <Route exact path="/" render={() => (
-          <Categoria />
-        )} />
+          <div>
+            <NavBar back={false}/>
+            <SearchBar />
+            <Categoria />
+          </div>
+        )} />       
         <Route exact path="/mais-barato" render={() => (
-          <List tipo={"barato"}/>
+          <div>
+            <NavBar history={customHistory} back={true}/>
+            <SearchBar />
+            <List tipo={"barato"}/>
+          </div>
         )} />
         <Route exact path="/mais-proximo" render={() => (
-          <List tipo={"proximo"}/>
+          <div>
+            <NavBar history={customHistory} back={true}/>
+            <SearchBar />
+            <List tipo={"proximo"}/>
+          </div>
         )} />
         <Route exact path="/sugestao" render={() => (
-          <List tipo={"sugestao"}/>
+          <div>
+            <NavBar history={customHistory} back={true}/>
+            <SearchBar />
+            <List tipo={"sugestao"}/>
+          </div>
         )} />
-      </div>
+      </Grid>
     )
   }
 }
