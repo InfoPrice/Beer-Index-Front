@@ -2,6 +2,7 @@
 
 #./deploy.sh
 
+npm install
 npm run build
 
 if [[ $? -eq 0 ]]; then
