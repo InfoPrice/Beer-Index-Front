@@ -42,11 +42,9 @@ class List extends Component {
                     <Card key={cerveja.cd_identificador} className="cards">
                         <Grid  className="list" item xs={12}>
                             <Grid item xs={4}>
-                                <CardActionArea >
-                                    <div>
-                                        <img className="arruma-imagem" src={cerveja.foto} alt="cerveja"/>
-                                    </div>                              
-                                </CardActionArea>
+                                <div>
+                                    <img className="arruma-imagem" src={cerveja.foto} alt="cerveja"/>
+                                </div>       
                             </Grid>
                             <Grid item xs={8}>
                                 <CardContent >
