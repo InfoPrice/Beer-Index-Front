@@ -5,6 +5,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 
 class SearchBar extends Component {
+
     render() {
         return (
             <Paper item xs={12} elevation={1}>               
@@ -17,4 +18,4 @@ class SearchBar extends Component {
     }
 }
 
-export default SearchBar
+export default SearchBar;
