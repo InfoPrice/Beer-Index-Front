@@ -23,21 +23,21 @@ class App extends Component {
         )} />       
         <Route exact path="/mais-barato" render={() => (
           <div>
-            <NavBar history={customHistory} back={true}/>
+            <NavBar history={customHistory} back={true} title={"Mais Barato"}/>
             <SearchBar />
             <List tipo={"barato"}/>
           </div>
         )} />
         <Route exact path="/mais-proximo" render={() => (
           <div>
-            <NavBar history={customHistory} back={true}/>
+            <NavBar history={customHistory} back={true} title={"Mais Próximo"}/>
             <SearchBar />
             <List tipo={"proximo"}/>
           </div>
         )} />
         <Route exact path="/sugestao" render={() => (
           <div>
-            <NavBar history={customHistory} back={true}/>
+            <NavBar history={customHistory} back={true} title={"Sugestão"}/>
             <SearchBar />
             <List tipo={"sugestao"}/>
           </div>

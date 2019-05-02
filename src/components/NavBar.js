@@ -22,9 +22,16 @@ class NavBar extends Component {
                                 <ArrowBack onClick={(event) => this.voltar()} />
                             }
                         </IconButton>
-                        <Typography variant="h6" color="inherit">
-                            BeerIndex
-                        </Typography>
+                            {!this.props.title &&
+                                <Typography variant="h6" color="inherit">
+                                    BeerIndex
+                                </Typography>
+                            }
+                            {this.props.title &&
+                                <Typography variant="h6" color="inherit">
+                                    {this.props.title}
+                                </Typography>
+                            }
                         <Typography variant="h6" color="inherit"></Typography>
                     </Toolbar>
                 </AppBar>
