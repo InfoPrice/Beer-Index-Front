@@ -1,1 +1,0 @@
-# Beer Index Front
