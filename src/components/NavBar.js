@@ -18,10 +18,13 @@ class NavBar extends Component {
                 <AppBar position="static">
                     <Toolbar>
                         <IconButton color="inherit" aria-label="Menu">
-                        {this.props.back &&
-                            <ArrowBack  onClick={(event) => this.voltar()}/>
-                        }
+                            {this.props.back &&
+                                <ArrowBack onClick={(event) => this.voltar()} />
+                            }
                         </IconButton>
+                        <Typography variant="h6" color="inherit">
+                            BeerIndex
+                        </Typography>
                         <Typography variant="h6" color="inherit"></Typography>
                     </Toolbar>
                 </AppBar>

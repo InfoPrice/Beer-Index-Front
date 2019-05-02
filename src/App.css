@@ -28,7 +28,7 @@
 }
 
 .img-card-categoria{
-  max-height: 100px;
+  height: 20vh;
   width: 100%;
 }
 
@@ -42,6 +42,7 @@
 
 .item-categoria{
   margin-bottom: 10px;
+  height: 25vh;
 }
 
 .arruma-imagem{
